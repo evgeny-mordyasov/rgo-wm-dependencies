@@ -15,6 +15,49 @@
         <maven.compiler.source>17</maven.compiler.source>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+        <!-- rgo-wm modules -->
+        <rgo-wm-common-utils.version>24.0.0-SNAPSHOT</rgo-wm-common-utils.version>
+        <rgo-wm-common-test-utils.version>24.0.0-SNAPSHOT</rgo-wm-common-test-utils.version>
+        <!-- spring-boot -->
+        <spring-boot.version>3.3.0</spring-boot.version>
+        <!-- utils -->
+        <jsr305.version>3.0.2</jsr305.version>
     </properties>
 
+    <dependencyManagement>
+        <dependencies>
+            <!-- rgo-wm modules -->
+            <dependency>
+                <groupId>ru.gold.ordance</groupId>
+                <artifactId>rgo-wm-common-utils-asserts</artifactId>
+                <version>${rgo-wm-common-utils.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>ru.gold.ordance</groupId>
+                <artifactId>rgo-wm-common-test-utils-random</artifactId>
+                <version>${rgo-wm-common-test-utils}</version>
+                <scope>test</scope>
+            </dependency>
+            <!-- /rgo-wm modules -->
+
+            <!-- spring-boot -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring-boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <!-- /spring-boot -->
+
+            <!-- utils -->
+            <dependency>
+                <groupId>com.google.code.findbugs</groupId>
+                <artifactId>jsr305</artifactId>
+                <version>${jsr305.version}</version>
+            </dependency>
+            <!-- /utils -->
+        </dependencies>
+    </dependencyManagement>
 </project>
