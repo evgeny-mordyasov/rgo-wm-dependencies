@@ -35,6 +35,16 @@
             </dependency>
             <dependency>
                 <groupId>ru.gold.ordance</groupId>
+                <artifactId>rgo-wm-common-utils-rest-api</artifactId>
+                <version>${rgo-wm-common-utils.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>ru.gold.ordance</groupId>
+                <artifactId>rgo-wm-common-utils-validator</artifactId>
+                <version>${rgo-wm-common-utils.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>ru.gold.ordance</groupId>
                 <artifactId>rgo-wm-common-test-utils-random</artifactId>
                 <version>${rgo-wm-common-test-utils.version}</version>
                 <scope>test</scope>
