@@ -18,6 +18,8 @@
 
         <!-- rgo-wm modules -->
         <rgo-wm-common-utils.version>24.0.0-SNAPSHOT</rgo-wm-common-utils.version>
+        <rgo-wm-spring.version>24.0.0-SNAPSHOT</rgo-wm-spring.version>
+        <rgo-wm-spring-autoconfig.version>24.0.0-SNAPSHOT</rgo-wm-spring-autoconfig.version>
         <rgo-wm-common-test-utils.version>24.0.0-SNAPSHOT</rgo-wm-common-test-utils.version>
         <!-- spring-boot -->
         <spring-boot.version>3.3.0</spring-boot.version>
@@ -42,6 +44,16 @@
                 <groupId>ru.gold.ordance</groupId>
                 <artifactId>rgo-wm-common-utils-validator</artifactId>
                 <version>${rgo-wm-common-utils.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>ru.gold.ordance</groupId>
+                <artifactId>rgo-wm-spring-common</artifactId>
+                <version>${rgo-wm-spring.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>ru.gold.ordance</groupId>
+                <artifactId>rgo-wm-spring-autoconfig-common</artifactId>
+                <version>${rgo-wm-spring-autoconfig.version}</version>
             </dependency>
             <dependency>
                 <groupId>ru.gold.ordance</groupId>
