@@ -32,6 +32,11 @@
             <!-- rgo-wm modules -->
             <dependency>
                 <groupId>ru.gold.ordance</groupId>
+                <artifactId>rgo-wm-common-utils-exceptions</artifactId>
+                <version>${rgo-wm-common-utils.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>ru.gold.ordance</groupId>
                 <artifactId>rgo-wm-common-utils-asserts</artifactId>
                 <version>${rgo-wm-common-utils.version}</version>
             </dependency>
@@ -48,6 +53,11 @@
             <dependency>
                 <groupId>ru.gold.ordance</groupId>
                 <artifactId>rgo-wm-spring-common</artifactId>
+                <version>${rgo-wm-spring.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>ru.gold.ordance</groupId>
+                <artifactId>rgo-wm-spring-jdbc</artifactId>
                 <version>${rgo-wm-spring.version}</version>
             </dependency>
             <dependency>
