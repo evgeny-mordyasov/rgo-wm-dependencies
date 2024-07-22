@@ -62,7 +62,17 @@
             </dependency>
             <dependency>
                 <groupId>ru.gold.ordance</groupId>
+                <artifactId>rgo-wm-spring-web</artifactId>
+                <version>${rgo-wm-spring.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>ru.gold.ordance</groupId>
                 <artifactId>rgo-wm-spring-autoconfig-common</artifactId>
+                <version>${rgo-wm-spring-autoconfig.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>ru.gold.ordance</groupId>
+                <artifactId>rgo-wm-spring-autoconfig-web</artifactId>
                 <version>${rgo-wm-spring-autoconfig.version}</version>
             </dependency>
             <dependency>
