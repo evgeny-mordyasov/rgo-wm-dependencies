@@ -52,6 +52,11 @@
             </dependency>
             <dependency>
                 <groupId>ru.gold.ordance</groupId>
+                <artifactId>rgo-wm-common-utils-validator-rest</artifactId>
+                <version>${rgo-wm-common-utils.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>ru.gold.ordance</groupId>
                 <artifactId>rgo-wm-spring-common</artifactId>
                 <version>${rgo-wm-spring.version}</version>
             </dependency>
