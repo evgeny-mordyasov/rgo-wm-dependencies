@@ -16,12 +16,11 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-        <!-- rgo-wm modules -->
-        <rgo-wm-common-utils.version>24.0.0-SNAPSHOT</rgo-wm-common-utils.version>
-        <rgo-wm-spring.version>24.0.0-SNAPSHOT</rgo-wm-spring.version>
-        <rgo-wm-spring-autoconfig.version>24.0.0-SNAPSHOT</rgo-wm-spring-autoconfig.version>
+        <common-dependencies-bom.version>24.0.0-SNAPSHOT</common-dependencies-bom.version>
         <rgo-wm-common-test-utils.version>24.0.0-SNAPSHOT</rgo-wm-common-test-utils.version>
-        <!-- spring-boot -->
+        <rgo-wm-common-utils-bom.version>24.0.0-SNAPSHOT</rgo-wm-common-utils-bom.version>
+        <rgo-wm-spring-bom.version>24.0.0-SNAPSHOT</rgo-wm-spring-bom.version>
+        <rgo-wm-spring-autoconfig-bom.version>24.0.0-SNAPSHOT</rgo-wm-spring-autoconfig-bom.version>
         <spring-boot.version>3.3.0</spring-boot.version>
     </properties>
 
@@ -30,59 +29,37 @@
             <!-- rgo-wm modules -->
             <dependency>
                 <groupId>ru.gold.ordance</groupId>
-                <artifactId>rgo-wm-common-utils-exceptions</artifactId>
-                <version>${rgo-wm-common-utils.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>ru.gold.ordance</groupId>
-                <artifactId>rgo-wm-common-utils-asserts</artifactId>
-                <version>${rgo-wm-common-utils.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>ru.gold.ordance</groupId>
-                <artifactId>rgo-wm-common-utils-rest-api</artifactId>
-                <version>${rgo-wm-common-utils.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>ru.gold.ordance</groupId>
-                <artifactId>rgo-wm-common-utils-validator</artifactId>
-                <version>${rgo-wm-common-utils.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>ru.gold.ordance</groupId>
-                <artifactId>rgo-wm-common-utils-validator-rest</artifactId>
-                <version>${rgo-wm-common-utils.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>ru.gold.ordance</groupId>
-                <artifactId>rgo-wm-spring-common</artifactId>
-                <version>${rgo-wm-spring.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>ru.gold.ordance</groupId>
-                <artifactId>rgo-wm-spring-jdbc</artifactId>
-                <version>${rgo-wm-spring.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>ru.gold.ordance</groupId>
-                <artifactId>rgo-wm-spring-web</artifactId>
-                <version>${rgo-wm-spring.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>ru.gold.ordance</groupId>
-                <artifactId>rgo-wm-spring-autoconfig-common</artifactId>
-                <version>${rgo-wm-spring-autoconfig.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>ru.gold.ordance</groupId>
-                <artifactId>rgo-wm-spring-autoconfig-web</artifactId>
-                <version>${rgo-wm-spring-autoconfig.version}</version>
+                <artifactId>common-dependencies-bom</artifactId>
+                <version>${common-dependencies-bom.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
             </dependency>
             <dependency>
                 <groupId>ru.gold.ordance</groupId>
                 <artifactId>rgo-wm-common-test-utils-random</artifactId>
                 <version>${rgo-wm-common-test-utils.version}</version>
                 <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>ru.gold.ordance</groupId>
+                <artifactId>rgo-wm-common-utils-bom</artifactId>
+                <version>${rgo-wm-common-utils-bom.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>ru.gold.ordance</groupId>
+                <artifactId>rgo-wm-spring-bom</artifactId>
+                <version>${rgo-wm-spring-bom.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>ru.gold.ordance</groupId>
+                <artifactId>rgo-wm-spring-autoconfig-bom</artifactId>
+                <version>${rgo-wm-spring-autoconfig-bom.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
             </dependency>
             <!-- /rgo-wm modules -->
 
