@@ -11,17 +11,12 @@
     <packaging>pom</packaging>
 
     <properties>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-
         <common-dependencies-bom.version>24.0.0-SNAPSHOT</common-dependencies-bom.version>
         <rgo-wm-common-test-utils.version>24.0.0-SNAPSHOT</rgo-wm-common-test-utils.version>
         <rgo-wm-common-utils-bom.version>24.0.0-SNAPSHOT</rgo-wm-common-utils-bom.version>
         <rgo-wm-spring-bom.version>24.0.0-SNAPSHOT</rgo-wm-spring-bom.version>
         <rgo-wm-spring-autoconfig-bom.version>24.0.0-SNAPSHOT</rgo-wm-spring-autoconfig-bom.version>
-        <spring-boot.version>3.3.0</spring-boot.version>
+        <spring-boot.version>3.4.3</spring-boot.version>
     </properties>
 
     <dependencyManagement>
